@@ -22,17 +22,6 @@ install nginx
 apt install nginx
 ```
 
-service command line
-
-```
-sudo nginx -t
-```
-```
-sudo service nginx restart
-```
-```
-sudo service nginx status
-```
 
 
 jika semua ok kita konfigurasi
@@ -64,6 +53,24 @@ server {
       proxy_cache_bypass $http_upgrade;
    }
 }  
+```
+restart buat load konfiguras
+
+service command line
+
+
+```
+sudo service nginx restart
+```
+
+cek snytak
+```
+sudo nginx -t
+```
+cek sstatus
+
+```
+sudo service nginx status
 ```
 
 aktifkan port
